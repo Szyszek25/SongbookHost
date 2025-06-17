@@ -33,7 +33,12 @@ class MainActivity : AppCompatActivity() {
                     )
                     return@setOnClickListener
                 }
-                startService(Intent(this, HotspotService::class.java))
+                // Od Androida 8.0 musimy uruchamiać usługę jako
+                // foreground service, aby system jej nie zatrzymał.
+                ContextCompat.startForegroundService(
+                    this,
+                    Intent(this, HotspotService::class.java)
+                )
             }
             running = !running
             toggleButton.text = if (running) "Zatrzymaj" else "Uruchom hotspot"
