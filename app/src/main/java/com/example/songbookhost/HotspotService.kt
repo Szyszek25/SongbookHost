@@ -2,7 +2,6 @@ package com.example.songbookhost
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
-import android.app.PendingIntent
 import android.app.Service
 import android.content.Context
 import android.content.Intent
@@ -101,7 +100,7 @@ class HotspotService : Service() {
     private fun buildNotification() = NotificationCompat.Builder(this, channelId)
         .setContentTitle("SongbookHost")
         .setContentText("Uruchomiono hotspot")
-        .setSmallIcon(android.R.drawable.stat_sys_wifi)
+        .setSmallIcon(android.R.drawable.stat_sys_wifi_signal_4)
         .setOngoing(true)
         .build()
 
