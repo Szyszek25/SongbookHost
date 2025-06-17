@@ -2,6 +2,9 @@
 
 Minimalny projekt Android (Kotlin) tworzący lokalny hotspot Wi‑Fi i
 serwer HTTP/WebSocket (Ktor) udostępniający teksty piosenek offline.
+Usługa jest teraz uruchamiana jako *foreground service* z
+powiadomieniem, dzięki czemu działa stabilnie na nowszych wersjach
+Androida.
 
 ## Szybki start
 1. Otwórz folder `SongbookHost` w **Android Studio 2022.3+**.  
