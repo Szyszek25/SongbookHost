@@ -10,6 +10,7 @@ import android.content.Intent
 import android.Manifest
 import android.content.pm.PackageManager
 
+>>>>>>> master
 import android.net.wifi.WifiManager
 import android.os.Build
 import android.os.Handler
@@ -54,8 +55,6 @@ class HotspotService : Service() {
             return
         }
 
-
-
         wifiManager.startLocalOnlyHotspot(object : WifiManager.LocalOnlyHotspotCallback() {
             override fun onStarted(reservation: WifiManager.LocalOnlyHotspotReservation) {
                 this@HotspotService.reservation = reservation
@@ -78,7 +77,11 @@ class HotspotService : Service() {
             manager.createNotificationChannel(channel)
         }
         return NotificationCompat.Builder(this, CHANNEL_ID)
+   ai3k52-codex/stwórz-aplikację-od-nowa
+            .setSmallIcon(android.R.drawable.stat_sys_wifi_signal_4)
+
             .setSmallIcon(android.R.drawable.stat_sys_wifi)
+
             .setContentTitle(getString(R.string.notification_title))
             .setContentText(getString(R.string.notification_running))
             .build()
