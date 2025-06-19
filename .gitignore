@@ -1,0 +1,13 @@
+# Gradle & build
+.gradle/
+build/
+app/build/
+
+# IDE
+.idea/
+
+# Local properties
+local.properties
+
+# Misc
+*.iml
