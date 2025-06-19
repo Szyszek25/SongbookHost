@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace "com.example.songbookhost"
+    namespace "com.songbookhost"
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.songbookhost"
+        applicationId "com.songbookhost"
         minSdk 26
         targetSdk 34
         versionCode 1
