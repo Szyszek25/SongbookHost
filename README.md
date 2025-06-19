@@ -1,17 +1,13 @@
 # SongbookHost Android
 
-Minimalny projekt Android (Kotlin) tworzący lokalny hotspot Wi‑Fi i
-serwer HTTP/WebSocket (Ktor) udostępniający teksty piosenek offline.
+Aplikacja Android umożliwiająca włączenie lokalnego hotspotu Wi‑Fi i udostępnianie tekstów piosenek przez serwer Ktor (REST + WebSocket). Całość działa offline na jednym urządzeniu‑hoście.
 
 ## Szybki start
-1. Otwórz folder `SongbookHost` w **Android Studio 2022.3+**.  
-2. Zaczekaj na synchronizację Gradle, ewentualnie zaakceptuj aktualizację pluginów.  
-3. Uruchom aplikację na urządzeniu **z Androidem 8.0 (API 26)+**.  
-4. Naciśnij **Uruchom hotspot** – pojawi się SSID i hasło w pasku systemowym.  
-5. Inne telefony mogą podłączyć się do tego AP, a w przeglądarce wejść na  
-   `http://192.168.43.1:8080/songs/1` (adres IP hosta może się różnić).  
+1. Otwórz folder `SongbookHost` w **Android Studio 2022.3+**.
+2. Po synchronizacji Gradle uruchom aplikację na urządzeniu **z Androidem 8.0 (API 26)+**.
+3. Naciśnij **Uruchom hotspot** – pojawi się adres IP hosta.
+4. Inne telefony mogą podłączyć się do tego AP i w przeglądarce wejść na `http://&lt;IP hosta&gt;:8080/songs/1`.
 
 ### Dalszy rozwój
-- Dodaj listę piosenek w `assets/songs`.  
-- Rozbuduj UI na klientach (HTML/JS lub aplikacja).  
-- Implementuj broadcast tekstu / karaoke via WebSocket.  
+- Dodaj więcej utworów w `assets/songs`.
+- Rozbuduj UI klientów (HTML/JS lub aplikacja).
